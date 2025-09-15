@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,condition,batch
+TCRBOA7_tumor_rna,assets/test_data/fastq/TCRBOA7-T-RNA.read1.250000.fastq.gz,assets/test_data/fastq/TCRBOA7-T-RNA.read2.250000.fastq.gz,tumor,1
