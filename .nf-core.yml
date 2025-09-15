@@ -1,0 +1,17 @@
+repository_type: pipeline
+
+nf_core_version: 3.3.2
+
+lint: {}
+
+template:
+  org: nf-core
+  name: immunogenomics
+  description: Integrated WES and RNA-seq analysis pipeline for cancer immunogenomics
+  author: Sanjay SG Krishna, Chen Li
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  skip_features:
+    - gpu
+  is_nfcore: true
