@@ -8,8 +8,12 @@ include { MULTIQC                } from '../modules/nf-core/multiqc/main'
 include { paramsSummaryMap       } from 'plugin/nf-schema'
 include { paramsSummaryMultiqc   } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
-include { methodsDescriptionText } from '../subworkflows/local/utils_nfcore_immunogenomics_pipeline'
-include { ENSEMBLVEP_VEP } from '../modules/nf-core/ensemblvep/vep/main'     
+include { methodsDescriptionText } from '../subworkflows/local/utils'
+
+include { ENSEMBLVEP_VEP         } from '../modules/nf-core/ensemblvep/vep/main' 
+include { BWAMEM2_MEM } from '../modules/nf-core/bwamem2/mem/main'
+include { GATK4_MARKDUPLICATES } from '../modules/nf-core/gatk4/markduplicates/main'                                                                                              
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     RUN MAIN WORKFLOW
